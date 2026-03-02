@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5b5cd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    transition: background 0.8s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.botones {
+    position: relative;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+#btnSi {
+    background-color: #28a745;
+    color: white;
+    left: 20%;
+}
+
+#btnNo {
+    background-color: #dc3545;
+    color: white;
+    right: 20%;
+}
+
+/* Corazones */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: caer 3s linear infinite;
+}
+
+@keyframes caer {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
