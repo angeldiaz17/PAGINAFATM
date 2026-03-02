@@ -14,7 +14,7 @@ btnSi.addEventListener("click", () => {
 
     aceptado = true; // ya no crecen más
 
-    imagen.src = "img/si.jpg";
+    imagen.src = "Img/si.jpg";
     titulo.textContent = "Sabía que dirías que sí 😍💍";
     titulo.style.color = "white";
     document.body.style.background = "linear-gradient(135deg, #000000, #000000)";
